@@ -45,12 +45,12 @@ function App() {
   // console.log(filterData); 
 
   return (
-    <table border="1px">
+    <table border="1px" >
       <tr>
         <th>name</th>
         <th>age</th>
         <th>salary</th>
-        <th>bonus</th>
+        <th>bonus</th> 
         <th>status</th>
       </tr>
 
