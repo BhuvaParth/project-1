@@ -40,18 +40,23 @@ function App() {
     },
   ];
 
-  let filterData = data.filter((x, i) => (x.salary > 35000 && x.age > 25  || x.bonus > 500))
+  let filterData = data.filter((x, i) => (x.salary > 10000))
 
-  // console.log(filterData); 
+  let total = filterData.reduce((acc, x) => acc + x.salary + x.bonus, 0);
+
+
+  console.log(filterData.length);
 
   return (
-    <table border="1px" >
+    <table border="1px">
       <tr>
         <th>name</th>
         <th>age</th>
         <th>salary</th>
-        <th>bonus</th> 
+        <th>bonus</th>
         <th>status</th>
+        <th>bonus + salary</th>
+        <th>total</th>
       </tr>
 
       {
@@ -63,7 +68,9 @@ function App() {
                 <td>{x.age}</td>
                 <td>{x.salary}</td>
                 <td>{x.bonus}</td>
-                <td>{x.status}</td>
+                <td>{x.status.toString()}</td>
+                <td>{x.bonus + x.salary}</td>
+                {i === 0 ? <td rowspan={filterData.length}> {total} </td> :null}
               </tr>
             </>
           )
