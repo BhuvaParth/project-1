@@ -1,6 +1,6 @@
 import React from 'react';
 
-function madicine(props) {
+function Madicine(props) {
     let data = [
         {
             id: 101,
@@ -52,4 +52,4 @@ function madicine(props) {
 
 }
 
-export default madicine;
+export default Madicine;
