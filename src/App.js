@@ -1,19 +1,17 @@
-import logo from './logo.svg';
 import React from 'react';
-import Employee from './New folder (2)/Employee';
-import Madicine from './New folder (2)/Madicine';
-import City from './New folder (2)/City';
+import City from './containers/City';
+import CityFun from './containers/CityFun';
+import Country from './containers/Country';
 
 function App(props) {
   return (
     <div>
-      {/* <Employee />
-      <Madicine /> */}
+      <Country />
       <City />
+      <CityFun />
+      <Array />
     </div>
   );
 }
 
 export default App;
-
-// https://github.com/BhuvaParth/project-1
