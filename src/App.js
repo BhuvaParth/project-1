@@ -1,10 +1,10 @@
 import React from 'react';
 import City from './containers/City';
-import CityFun from './containers/CityFun';
 import Count from './containers/Count';
-import Country from './containers/Country';
+import Country from './containers/State';
 import Employee from './containers/Employee';
 import Madicine from './containers/Madicine';
+import State from './containers/State';
 
 function App() {
   return (
@@ -14,11 +14,11 @@ function App() {
 
       {/* <Employee /> */}
       
-      {/* <Country />
-      <City />
-      <CityFun />
-      <Array /> */}
-      <Count />
+      {/* <Country /> */}
+      {/* <City /> */}
+      {/* <Array /> */}
+      {/* <Count /> */}
+      <State />
     </div>
   );
 }
