@@ -5,6 +5,7 @@ import Country from './containers/State';
 import Employee from './containers/Employee';
 import Madicine from './containers/Madicine';
 import State from './containers/State';
+import Clock from './containers/Clock';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       {/* <City /> */}
       {/* <Array /> */}
       {/* <Count /> */}
-      <State />
+      {/* <State /> */}
+      <Clock />
     </div>
   );
 }
