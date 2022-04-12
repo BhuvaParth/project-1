@@ -6,6 +6,7 @@ import Employee from './containers/Employee';
 import Madicine from './containers/Madicine';
 import State from './containers/State';
 import Clock from './containers/Clock';
+import ClockFun from './containers/ClockFun';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       {/* <Array /> */}
       {/* <Count /> */}
       {/* <State /> */}
-      <Clock />
+      {/* <Clock /> */}
+      <ClockFun />
     </div>
   );
 }
