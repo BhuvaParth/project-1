@@ -32,12 +32,12 @@ function App(props) {
     useEffect (
       () => {
         setLoading(true)
-        setTimeout(() => {setLoading(false); setData(userData)}, 5000)
+        setTimeout(() => {setLoading(false); setData(userData)}, 2000)
       },
     [])
 
   return (
-    <div class="text-center text-light fs-3">
+    <div class="text-center fs-3">
       <HomeWithLoading
       isLoading= {loading}
       data={data}
